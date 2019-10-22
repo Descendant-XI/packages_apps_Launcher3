@@ -159,7 +159,8 @@
             android:authorities="${packageName}.grid_control"
             android:exported="true"
             android:writePermission="${packageName}.permission.WRITE_SETTINGS"
-            android:readPermission="${packageName}.permission.READ_SETTINGS" />
+            android:readPermission="${packageName}.permission.READ_SETTINGS"
+            android:enabled="true" />
 
         <!--
         The settings activity. To extend point settings_fragment_name to appropriate fragment class
