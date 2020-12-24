@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.statix.launcher;
+package org.descendant.launcher;
 
 import com.android.launcher3.uioverrides.QuickstepLauncher;
 import com.android.systemui.plugins.shared.LauncherOverlayManager;
