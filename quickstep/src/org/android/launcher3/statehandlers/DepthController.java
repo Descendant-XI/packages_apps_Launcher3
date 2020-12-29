@@ -232,8 +232,8 @@ public class DepthController implements StateHandler<LauncherState>,
                 // All apps has a solid background. We don't need to draw blurs after it's fully
                 // visible. This will take us out of GPU composition, saving battery and increasing
                 // performance.
-                // HAHAHA no, Google. Let's have blur but one third of it.
-                blur = (int) (mDepth * mMaxBlurRadius / 3);
+                // HAHAHA no, Google. Let's have blur but half of it.
+                blur = (int) (mDepth * mMaxBlurRadius / 2);
             } else {
                 blur = (int) (mDepth * mMaxBlurRadius);
             }
