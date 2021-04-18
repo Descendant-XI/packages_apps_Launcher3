@@ -49,7 +49,7 @@
         android:key="pref_enable_minus_one"
         android:summary="@string/pref_show_google_now_summary"
         android:title="@string/title_show_google_app"/>
-
+  
     <SwitchPreference
         android:key="pref_dt_gesture"
         android:title="@string/pref_dt_gesture_title"
@@ -60,6 +60,11 @@
     <Preference
         android:key="pref_icon_pack"
         android:title="@string/icon_pack_title" />
+
+    <Preference
+        android:key="pref_trust_apps"
+        android:title="@string/trust_apps_manager_name"
+        android:summary="@string/trust_apps_manager_summary" />
 
     <androidx.preference.PreferenceScreen
         android:key="pref_developer_options"
