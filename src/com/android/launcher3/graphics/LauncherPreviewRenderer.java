@@ -68,7 +68,7 @@ import com.android.launcher3.R;
 import com.android.launcher3.WorkspaceLayoutManager;
 import com.android.launcher3.config.FeatureFlags;
 import com.android.launcher3.folder.FolderIcon;
-import com.android.launcher3.icons.BaseIconFactory;
+import com.android.launcher3.descendant.icon.DescendantIconFactory;
 import com.android.launcher3.icons.BitmapInfo;
 import com.android.launcher3.icons.BitmapRenderer;
 import com.android.launcher3.icons.LauncherIcons;
@@ -230,8 +230,8 @@ public class LauncherPreviewRenderer implements Callable<Bitmap> {
         mInsets.top = mInsets.bottom = (mDp.heightPx - mDp.availableHeightPx) / 2;
         mDp.updateInsets(mInsets);
 
-        BaseIconFactory iconFactory =
-                new BaseIconFactory(context, mIdp.fillResIconDpi, mIdp.iconBitmapSize) { };
+        DescendantIconFactory iconFactory =
+                new DescendantIconFactory(context, mIdp.fillResIconDpi, mIdp.iconBitmapSize) { };
         BitmapInfo iconInfo = iconFactory.createBadgedIconBitmap(new AdaptiveIconDrawable(
                         new ColorDrawable(Color.WHITE), new ColorDrawable(Color.WHITE)),
                 Process.myUserHandle(),
